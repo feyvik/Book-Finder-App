@@ -7,7 +7,7 @@ import { map } from "rxjs/operators";
   providedIn: "root"
 })
 export class ApiService {
-  key = "your_id";
+  key = "your_key";
   constructor(private httpClient: HttpClient) {}
   get(queryField: string) {
     return this.httpClient.get(
