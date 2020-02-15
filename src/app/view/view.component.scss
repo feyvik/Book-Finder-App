@@ -1,0 +1,47 @@
+.hero-page1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.89)),
+    url("../../assets/image.jpg");
+  background-position: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: fill;
+  height: 100vh;
+  width: 100%;
+}
+h1 {
+  margin: 0;
+  color: rgb(251, 251, 251);
+  text-align: center;
+}
+.container .row {
+  min-height: 100vh;
+}
+.book-display {
+  font-size: 20px;
+  min-height: 50vh;
+  border: 1px solid rgb(15, 15, 15);
+  margin-right: 5px;
+  margin-top: 20px;
+  padding: 10px;
+  box-shadow: 0 6px 6px #e6e6e6;
+  .image {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    height: 30vh;
+    img {
+      width: 100%;
+      object-fit: fill;
+      height: 25vh;
+    }
+  }
+  .details {
+    a {
+      margin-right: 100px;
+      color: rgb(0, 110, 255);
+      cursor: pointer;
+      font-size: 20px;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.hero-page1 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.89)), to(rgba(0, 0, 0, 0.89))), url("../assets/image.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.89)), url("../assets/image.jpg");
+  background-position: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -o-object-fit: fill;
+     object-fit: fill;
+  height: 100vh;
+  width: 100%;
+}
+
+h1 {
+  margin: 0;
+  color: #fbfbfb;
+  text-align: center;
+}
+
+.container .row {
+  height: 100vh;
+}
+
+.book-display {
+  min-block-size: 40vh;
+  border: 1px solid red;
+  margin-right: 5px;
+  margin-top: 20px;
+}
+/*# sourceMappingURL=app.component.css.map */

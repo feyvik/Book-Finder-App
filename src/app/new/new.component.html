@@ -1,0 +1,34 @@
+<div
+  *ngIf="single"
+  class="container text-center"
+  style="min-height:70vh; padding-top: 19px;"
+>
+  <div class="">
+    <h1 class="text-center">Title: {{ single.volumeInfo.title }}</h1>
+    <p>Subtitle: {{ single.volumeInfo.subtitle }}</p>
+    <div *ngFor="let aut of single.volumeInfo.authors">
+      <span> Authors: {{ aut }}</span>
+    </div>
+    <img
+      *ngIf="single.volumeInfo.imageLinks.thumbnail"
+      src="{{ single.volumeInfo.imageLinks.thumbnail }}"
+      alt=""
+    />
+    <div class="text-justify" [innerHTML]="single.volumeInfo.description"></div>
+    <div>
+      <span class="mr-5">Publisher: {{ single.volumeInfo.publisher }}</span>
+      <span>PublishedDate: {{ single.volumeInfo.publishedDate }}</span>
+    </div>
+  </div>
+</div>
+<footer
+  class="bg-dark"
+  style="min-height:30vh; width:100%; color: white; font-size:20px"
+>
+  <div
+    class="row justify-content-center align-items-center m-0"
+    style="min-height:30vh;"
+  >
+    <p>Proudly Coded By @fey_vik vivian woka</p>
+  </div>
+</footer>
