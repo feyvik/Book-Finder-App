@@ -34,7 +34,7 @@ export class ViewComponent implements OnInit {
   ngOnInit() {
     this.loading = false;
     this.queryField.valueChanges
-      .pipe(debounceTime(10000), distinctUntilChanged())
+      .pipe(debounceTime(1000), distinctUntilChanged())
       .subscribe((queryField: any) => {
         let te = queryField.replace(/\s/g, "");
         if (te.length > 2) {
@@ -42,7 +42,7 @@ export class ViewComponent implements OnInit {
             this.loading = true;
             setTimeout(() => {
               this.items = result.items;
-            }, 3000);
+            }, 2000);
           });
         }
       });
